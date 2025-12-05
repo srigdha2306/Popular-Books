@@ -1,0 +1,115 @@
+body{
+    background-color: #1b1b1b;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color:white;
+}
+.main{
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    margin: auto;   
+}
+.popularsection,
+.reccomendationsection {
+  font-family: 'Playfair Display', serif;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.popular-card{
+   display: flex;
+   background-color: rgba(255, 255, 255, 0.71);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+.popular-card img{
+    width: 130px;
+    height: auto;
+}
+.popular-info {
+  padding: 20px;
+  color: #000;
+}
+.popular-info h2 {
+  margin: 0;
+  font-size: 22px;
+}
+.popular-info h3 {
+  margin: 8px 0;
+  font-size: 16px;
+}
+.popular-info p {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.popular-card button {
+  background-color: #4040e2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.85;
+}
+.recommendation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.bookcard {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+.bookcard img {
+  width: 80px;
+  border-radius: 6px;
+}
+.bookcard h2 {
+  margin: 0;
+  font-size: 20px;
+}
+.bookcard p {
+  font-size: 14px;
+  color: #cccccc;
+  margin: 8px 0;
+}
+.bookcard button {
+  background-color: #4040e2;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.bookcard button:hover {
+  opacity: 0.85;
+}
+
+@media (max-width: 500px) {
+  .popular-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .popular-card img {
+    width: 100%;
+    height: auto;
+  }
+  .popular-info {
+    padding: 15px;
+  }
+  .bookcard {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .bookcard img {
+    width: 100%;
+    height: auto;
+  }
+}
